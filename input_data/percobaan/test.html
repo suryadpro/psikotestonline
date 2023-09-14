@@ -1,0 +1,9 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var ajaxku = new XMLHttpRequest(); ajaxku.onreadystatechange = reportStatus; ajaxku.open("GET", "http://localhost/test.xml", true); ajaxku.send(); function reportStatus() {     if (ajaxku.readyState == 4 /* complete */) {         if (ajaxku.status == 200 || ajaxku.status == 304) {             alert('Transfer complete.');         }         else {// terjadi error                 }     } } 
+</script>
+</body>
+</html>
